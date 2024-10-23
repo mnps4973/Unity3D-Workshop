@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody _rb;
-    private float speed = 2.0f;
+    private float speed = 8.0f;
     Vector3 m_Movement;
 
     // Start is called before the first frame update
@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontalValue = -(Input.GetAxisRaw("Vertical"));
-        float verticalValue = Input.GetAxisRaw("Horizontal");
+        float horizontalValue = Input.GetAxisRaw("Horizontal");
+        float verticalValue = Input.GetAxisRaw("Vertical");
 
         m_Movement.Set(horizontalValue, 0f, verticalValue);
         if (horizontalValue != 0 && verticalValue != 0) {
