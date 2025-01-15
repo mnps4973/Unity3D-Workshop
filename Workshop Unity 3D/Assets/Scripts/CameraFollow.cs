@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {  
-        transform.Rotate(10, 0, 0);
+        transform.Rotate(60, 0, 0);
     }
 
     // Update is called once per frame
@@ -19,6 +19,6 @@ public class CameraFollow : MonoBehaviour
 
     void FixedUpdate(){
         //transform.position = new Vector3(FollowTransform.position.x - 30.0f, FollowTransform.position.y + 10.0f, FollowTransform.position.z);
-        transform.position = FollowTransform.position + Vector3.back * 30.0f + Vector3.up * 10.0f;
+        transform.position = FollowTransform.position + Vector3.back * 5.0f + Vector3.up * 20.0f;
     }
 }
