@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 public class GameUIController : MonoBehaviour
 {
     public void StartGame(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("GameLevel");
     }
 
     public void EndGame(){
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void RestartGame(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("GameLevel");
     }
 }

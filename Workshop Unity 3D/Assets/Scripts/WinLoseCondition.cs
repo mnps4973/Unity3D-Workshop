@@ -12,7 +12,7 @@ public class WinLoseCondition : MonoBehaviour
     {
         
     }
-
+    
     void OnTriggerEnter(Collider other){
         if(other.gameObject == player){
             m_isPlayerAtEnd = true;
